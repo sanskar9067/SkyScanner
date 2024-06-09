@@ -7,7 +7,9 @@ export default function Footer() {
 
 
             <footer className="bg-white shadow dark:bg-gray-900 m-0">
+
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                    <hr className="w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded md:my-12 dark:bg-gray-700"></hr>
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <img src={Logo} className="h-8" alt="logo" />

@@ -9,6 +9,7 @@ export default function TabComponent() {
 
     return (
         <div className="dark:bg-gray-900 dark:text-white py-4 ">
+            <hr className="w-8 h-8 mx-auto my-8 bg-gray-200 border-0 rounded md:my-12 dark:bg-gray-700"></hr>
             <Tabs selectedIndex={activeTab} onSelect={(index) => setActiveTab(index)}>
                 <TabList className="flex justify-center dark:bg-gray-900" >
                     <Tab

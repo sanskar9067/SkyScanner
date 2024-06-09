@@ -74,7 +74,7 @@ export default function WeatherSearch() {
             {
                 weather ? (<>
                     <div className="flex flex-col md:flex-row justify-center items-center gap-4 dark:bg-gray-900">
-                        <h2 className="my-5 text-4xl font-extrabold dark:text-white">Location Found : {weather.name}</h2>
+                        <h2 className="my-5 text-4xl font-extrabold dark:text-white" style={{ 'textAlign': 'center' }}>Location Found : {weather.name}</h2>
                     </div>
                     <div className="flex flex-col lg:flex-row items-center justify-center dark:bg-gray-900 p-6 space-y-6 lg:space-y-0 lg:space-x-6">
                         <div className="flex flex-col bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full max-w-xs lg:max-w-md">
