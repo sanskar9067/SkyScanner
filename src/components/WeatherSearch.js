@@ -7,9 +7,6 @@ export default function WeatherSearch() {
     const [error, setError] = useState('');
     const [time, setTime] = useState();
 
-    const apikey = process.env.REACT_APP_API_KEY
-    console.log(apikey);
-
     const getData = async (e) => {
         e.preventDefault();
         try {
