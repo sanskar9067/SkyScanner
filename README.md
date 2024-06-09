@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# SkyScanner - Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a web app created using ReactJS, HTML and Tailwind CSS. It detects your current location and gives the weather forecast and time in your area.
+You can also search for any location, and it will detect its coordinates to give the real time weather data and time in that location. All this is done using API available from Open Weather and API Ninjas.
 
-## Available Scripts
+## Steps to run this on your local machine
 
-In the project directory, you can run:
+### `Step 1`
 
-### `npm start`
+Clone the repository using the command "git clone https://github.com/sanskar9067/SkyScanner.git"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Step 2`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open terminal or command prompt and go to the location of this project in your machine.
 
-### `npm test`
+### `Step 3`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Note: Node should be installed in your system in order to run this.**
 
-### `npm run build`
+Run the command "npm i" or "npm install" to install all the node modules in the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Step 4`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the command "npm start" to run the react app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Link
 
-### `npm run eject`
+https://skyscanner-weather-app.netlify.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Approach and Technology Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In this project, all the data has been fetched using APIs thanks to Open Weather and API Ninjas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Firstly, for your current location data, JavaScript program was written to get your current latitude and longitude. The using the Open Weather API, I fetched the weather data using React axios and used the react useState() to set all these data to their respective states. Also using these coordinates, I was able to fetch the real time of that coordinate.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For searching a location, I created a simple input which accepts the name of the place and that is passed on to another API, which gives coordinates based on the name of the location and using those coordinates, I fetched the weather and time data just like I did previously.
 
-## Learn More
+To create the dark mode, I created a dark mode context API which handles the state globally across the app. And I created the dark mode toggler which toggles the dark mode when click on that button present on the navbar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For smoother navigation across the two modes i.e weather report of your location and weather report based on user input, I used react-tabs library which created two tabs and user can navigate according to his needs.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Limitations
 
-### Code Splitting
+While giving input, user is currently only bound to enter the name. In near future, I can add more versatality so that user can search places based on pin code of that area or by simply entering the exact coordinates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://drive.google.com/drive/folders/1-2laLrMdfutwHaczWTkYDdsNALyeTB_w?usp=sharing
